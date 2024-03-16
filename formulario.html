@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de Permiso de Construcción</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="#">Municipalidad de San Francisco</a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--SideBar-->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="services.html">Servicios</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="explicacion.html">Guía</a>
+                </li>
+              </ul>
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                <a href="#login" class="text-white">Iniciar sesión</a>
+                <a href="#signup" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color:rgb(188, 117, 255)">Registrarse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center text-white" style="margin-top: 100px;">
+        <h1>MUNICIPALIDAD DE SAN FRANCISCO</h1>
+        <h2>PROCESO DE ORDENAMIENTO TERRITORIAL</h2>
+        <h3>SUB PROCESO CONTROL URBANO</h3>
+    </div>
+    <br>
+    <div class="container-sm text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <div class="midiv justify-content-center align-items-center">
+                
+                <form>
+                    <div class="container text-center">
+                        <div class="row">
+                            <legend>Información del Propietario:</legend>
+                            <div class="col">
+                                <label class="form-label">Nombre o razón social:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Cedula fisica o juridica:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Telefono:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Numero de fax:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Correo electrónico:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Domicilio Fiscal (Dirección):</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Ubicación de la propiedad:</legend>
+                            <div class="col">
+                                <label class="form-label">Distrito:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Barrio:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Dirección exacta:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Otras señas:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Inscripción en el registro público:</legend>
+                            <div class="col">
+                                <label class="form-label">Folio real:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Frente a calle pública:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Area de terreno en m2:</label>
+                                <input type="text" class="form-control" aria-describedby="">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">N° de plano de catastro:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Permiso para:</legend>
+                            <div class="col">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Construir</option>
+                                    <option value="2">Remodelar</option>
+                                    <option value="3">Demolición</option>
+                                    <option value="4">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Clase de obra:</legend>
+                            <div class="col">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Vivienda</option>
+                                    <option value="2">Urbanización</option>
+                                    <option value="3">Industria</option>
+                                    <option value="4">Parqueos</option>
+                                    <option value="5">Oficinas</option>
+                                    <option value="6">Conjunto Habitacional</option>
+                                    <option value="7">Turismo</option>
+                                    <option value="8">Local Comercial</option>
+                                    <option value="9">Condominio</option>
+                                    <option value="10">Deportiva</option>
+                                    <option value="11">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input placeholder="Si marcó Otro escribalo aquí" type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Area de Construcción:</legend>
+                            <div class="col">
+                                <label class="form-label">Metros cuadrados m2:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Numero de pisos:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Valor de la obra:</legend>
+                            <div class="col">
+                                <label class="form-label">Costo total ₡:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Valor m2 ₡:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Duración estimada de los trabajos a realizar:</legend>
+                            <div class="col">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Dias</option>
+                                    <option value="2">Meses</option>
+                                    <option value="3">Años</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input placeholder="Indique la cantidad aquí" type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Cierre de aceras:</legend>
+                            <div class="col">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Dias</option>
+                                    <option value="2">Meses</option>
+                                    <option value="3">Años</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input placeholder="Indique la cantidad aquí" type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <legend>Financiamiento:</legend>
+                            <div class="col">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Banco, Mutual etc</option>
+                                    <option value="2">Bono vivienda</option>
+                                    <option value="3">Exonerado</option>
+                                    <option value="4">Declaratoria de interés social emitida por el ente autorizado</option>
+                                    <option value="5">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input placeholder="Si marcó otro indiquelo aquí" type="text" class="form-control" aria-describedby="">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary mibtn">Enviar formulario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
