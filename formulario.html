@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body class="vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
-          <a class="navbar-brand fs-4" href="#">Municipalidad de San Francisco</a>
+          <a class="navbar-brand fs-4" href="index.html">Municipalidad de San Francisco</a>
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,10 +46,9 @@
         <h3>SUB PROCESO CONTROL URBANO</h3>
     </div>
     <br>
-    <div class="container-sm text-center">
-        <div class="d-flex flex-column justify-content-center align-items-center text-center text-white">
-            <div class="midiv justify-content-center align-items-center">
-                
+    <div class="container">
+        <div class="card" style="backdrop-filter: blur(5px);">
+            <div class="card-body">
                 <form>
                     <div class="container text-center">
                         <div class="row">
@@ -227,9 +226,13 @@
                                 <input placeholder="Si marcó otro indiquelo aquí" type="text" class="form-control" aria-describedby="">
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <br>
+                                <button type="submit" class="btn btn-primary mibtn">Enviar formulario</button>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary mibtn">Enviar formulario</button>
                 </form>
             </div>
         </div>

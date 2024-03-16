@@ -1,9 +1,7 @@
 body{
-    background: url(images/simfondo.jpg) rgba(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #6B8072;
+    height: 100vh;
+    margin: 0;
 }
 
 @media (max-width: 991px){
@@ -23,4 +21,10 @@ body{
     border-radius: 10px;
     height: flex;
     
+}
+
+.mibtn{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
